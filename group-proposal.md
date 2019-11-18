@@ -1,4 +1,4 @@
-# INSTRUCTIONS
+﻿# INSTRUCTIONS
 
 This document is meant to guide you in structuring your group experience through a written project proposal. You should work on this together in class, updating further as needed.
 
@@ -45,16 +45,23 @@ and maybe more depending on how extensive this gets). We've exchanged phone numb
 ## The calendar
 _You may not be able to pin down dates until you get into the mix and see what's easy and what's harder than expected. But because our time for this unit is limited – we have only until the Tuesday after Thanksgiving, and I'm guessing you'd prefer to finish before going on break – it's important to set goals you can update as you know more. So, for now, what are you trying to finish..._
 
-**by Thursday, 2019-11-14**
 
 
 **by Tuesday, 2019-11-19**
-
+Completed text-only game. Some bugs and broken links are okay. Will fix in class
 
 **by Thursday, 2019-11-21**
+Images(animated gifs or pngs or jpegs) are ready
+Audio sound effects are ready
+Background sound are ready
+
+**by Sunday, 2019-11-21**
+Images, audios, are embedded in the game. 
+Most if not all Bugs are removed.
+Spell Check
+Apply styles
 
 
-<!-- add additional dates only if needed; probably best to keep the scope manageable! -->
 
 
 
