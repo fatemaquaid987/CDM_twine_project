@@ -56,9 +56,9 @@ You decide it’s much smarter to peruse the rooms for a possible key—or a pap
 Where to start?
 
 Wander around the [[livingroom]] to find your way out, 
-March towards the [[kitchen]] or, take a look around the [[bedroom]] ?</tw-passagedata><tw-passagedata pid="5" name="livingroom" tags="" position="514,315.5" size="100,100">Square-ish industrial windows [[Try Opening ]] 
+March towards the [[kitchen]] or, take a look around the [[bedroom]] ?</tw-passagedata><tw-passagedata pid="5" name="livingroom" tags="" position="507.3333333333333,255.5" size="100,100">Square-ish industrial windows [[Try Opening ]] 
 Front door [[Give it a try]]
-A rustic wood-burning fireplace[[fireplace]]. Struggling to stay alive now, the fire hiccups. &lt;br&gt;Some of the logs below it, are a bit crooked, and it might sputter out. You don’t have a skewer or tongs to adjust it, though... 
+A rustic wood-burning fireplace. Struggling to stay alive now, the fire hiccups. &lt;br&gt;Some of the logs below it, are a bit crooked, and it might sputter out. You don’t have a skewer or tongs to adjust it, though... [[CHECK FIREPLACE-&gt;fireplace]]
 An intricate antique lamp. [[Turn it on]]
 A colossal antique floor lamp, with a lampshade so wide you could wear it as a skirt. [[TURN ON-&gt; biglamp]]
 A tall, musty grandfather clock with a chunky base. Not only are the hands hugging each other at the absolutely wrong hour and minute, but they aren’t even moving at all. [[Try the clock-&gt;clock]] 
@@ -83,7 +83,7 @@ A potted snake plant. [[CHECK POT-&gt;pot]]
 
 
 
-</tw-passagedata><tw-passagedata pid="6" name="kitchen" tags="" position="1776,326.5" size="100,100">
+[[GO BACK-&gt;Begin]]</tw-passagedata><tw-passagedata pid="6" name="kitchen" tags="" position="1776,326.5" size="100,100">
 A collection of patterned mugs strewn across the countertop, teabags dangling over the lip. [[CHECK MUGS-&gt;mugs]]
 
 An oval dining table, carved with precision out of cherry wood. There’s a clean, thin line splitting it down the middle. [[CHECK FOR SECRET COMPARTMENTS-&gt;compartments]]
@@ -102,15 +102,30 @@ A large square-ish acrylic basin for a sink, with a curved faucet and circular p
 A creamy-colored oven with obnoxiously large dials. You look inside, but it appears there’s nothing inside except the wire oven racks. &lt;br&gt;lNatural gas stove above it. An old, empty pot sits atop one of the burners. [[OPEN OVEN-&gt;openoven]] [[TURN ON STOVE-&gt;stove]] [[TURN ON OVEN-&gt;startoven]]
 
 
-(if: $hanger is &quot;taken&quot;)[Use hanger to pull something down the drain(click-append: &quot;drain&quot;)[You found a key!]]
-</tw-passagedata><tw-passagedata pid="7" name="bedroom" tags="" position="2572,366.5" size="100,100">Twin bed. Floral quilt. Pillow(click-append: &quot;Pillow&quot;) [&lt;br&gt;&lt;em&gt;You found an old recipe!&lt;/em&gt;&lt;br&gt;]
-An old photograph. 
-Mirror(click-append: &quot;Mirror&quot;) [&lt;br&gt;&lt;em&gt;There could be something inside the cabinet!&lt;/em&gt;&lt;br&gt;]
-Unlocked dresser (click-append: &quot;dresser&quot;) [&lt;br&gt;&lt;em&gt;ooo! Theres a safe inside! Oh it&#39;s locked! What could be inside it?&lt;/em&gt;&lt;br&gt;]
-Clothing rack with some spare hangers (click-append: &quot;hangers&quot;) [&lt;br&gt;&lt;em&gt;You take a hanger&lt;/em&gt;&lt;br&gt; ] 
-(put: &quot;taken&quot; into $hanger)
+[[GO BACK-&gt;Begin]]
 
-Go back[[Begin]] 
+(if: $hanger is &quot;taken&quot;)[Use hanger to pull something down the drain(click-append: &quot;drain&quot;)[You found a key!]]
+</tw-passagedata><tw-passagedata pid="7" name="bedroom" tags="" position="2867,403.1666666666667" size="100,100">A queen-sized bed on a mahogany frame. &lt;br&gt; Atop the bed lies an antique quilt patterned with red tulips tucked neatly into the mattress, and a plumply-fluffed pillow. [[UNMAKE THE BED-&gt;bed]] [[MOVE THE PILLOW-&gt;pillow]]
+
+
+A collection of hastily-taken photos set in elaborate frames. You can make out a portrait of a girl clad in a purple ball gown, a lime-green parrot, and a fishing boat floating in open water. [[CHECK AROUND FRAMES-&gt;checkframes]] 
+
+A cube-ish wood nightstand, on top of which sits a blue rotary phone plugged into the wall. [[OPEN NIGHTSTAND-&gt;nightstand]] [[PICK UP PHONE-&gt;phone]]
+
+A small window hidden from view by silky embroidered curtains. &lt;br&gt; Unfortunately, also very square-ish, industrial, and un-open-able. [[PULL BACK DRAPES-&gt;drapes]]
+
+A rolling bamboo rack, sparsely decorated with sundresses and some extra wire hangers. [[TAKE HANGER-&gt;hanger]] 
+
+A rustic trunk embezzled with golden buckles and a large clasp. [[UNCLASP-&gt;unclasp]] 
+
+A thick mirror without a frame jutting out of the wall, almost like a painting. [[CHECK MIRROR-&gt;mirror]]
+
+A dusty dresser. Three drawers with scalloped knobs. [[OPEN TOP DRAWER-&gt;top]] [[OPEN MIDDLE-&gt;middle]] [[OPEN BOTTOM-&gt;bottom]] 
+
+
+
+
+
 </tw-passagedata><tw-passagedata pid="8" name="Try Opening " tags="" position="544,533.5" size="100,100">Not only are they shut, but there’s no way for them to even open in the first place. Who makes a house with windows that don’t open? 
  [[Go Back-&gt;livingroom]] </tw-passagedata><tw-passagedata pid="9" name="Give it a try" tags="" position="645,531.5" size="100,100">Locked, of course.
 [[Go Back-&gt;livingroom]] </tw-passagedata><tw-passagedata pid="10" name="fireplace" tags="" position="440,536.5" size="100,100">[[Turn Back -&gt;livingroom]] </tw-passagedata><tw-passagedata pid="11" name="Turn it on" tags="" position="334,537.5" size="100,100">Congrats, the room is a tinge lighter now. [[TURN BACK-&gt;livingroom]]</tw-passagedata><tw-passagedata pid="12" name=" biglamp" tags="" position="225,535.5" size="100,100"> Not only have you illuminated the room, but you can see the silhouette of a small sticky note taped to the inside of the lampshade. 
@@ -245,7 +260,97 @@ Oven’s on. What temperature will you set it to?
 [[TAKE SKEWER-&gt;skewer]] 
 [[TURN BACK-&gt;kitchen]]
 </tw-passagedata><tw-passagedata pid="41" name="skewer" tags="" position="2377,791.5" size="100,100">You wait until the oven’s cooled off, and then add the skewer to your bag. [[TURN BACK-&gt;kitchen]]</tw-passagedata><tw-passagedata pid="42" name="openoven" tags="" position="2576,510.49999999999994" size="100,100">It’s jammed shut for some reason. 
-[[TURN BACK-&gt;kitchen]]</tw-passagedata></tw-storydata>
+[[TURN BACK-&gt;kitchen]]</tw-passagedata><tw-passagedata pid="43" name="bed" tags="" position="3344.3333333333335,554.8333333333334" size="100,100">Just bare sheets. So much floral. 
+[[MOVE THE PILLOW-&gt;pillow]] 
+[[TURN BACK-&gt;bedroom]]
+</tw-passagedata><tw-passagedata pid="44" name="pillow" tags="" position="3471,556.5000000000001" size="100,100">A yellowed sheet of paper underneath, with a ripped edge. 
+[[READ-&gt;readrecipe]] 
+[[TURN BACK-&gt;bedroom]]
+</tw-passagedata><tw-passagedata pid="45" name="readrecipe" tags="" position="3444.3333333333335,698.1666666666667" size="100,100">It’s a recipe for chocolate chip cookies.
+&lt;h2&gt;INGREDIENTS:&lt;/h2&gt; 1 ¼ cups sugar. 1 ½ cups of softened butter. 2 tsp vanilla. 3 eggs. 4 ¼ cups flour. 2 tsp baking soda. ½ tsp salt. 2-4 cups semi-sweet chocolate chips.
+&lt;h2&gt;STEPS:&lt;/h2&gt;
+Preheat oven to 381°F. In large bowl with mixer, beat sugar, brown sugar, and butter until light and fluffy. 
+Beat in vanilla and eggs until well blended. 
+Beat in flour, baking soda and salt. 
+Stir in chocolate chips.
+Round the dough into tablespoon-sized balls and place onto baking sheets. 
+Bake 8 to 10 minutes or until golden brown. Cool 1 minute. 
+Remove cookies from oven and place on cooling rack. 
+		
+You add the recipe to your bag. 
+[[TURN BACK-&gt;bedroom]]
+</tw-passagedata><tw-passagedata pid="46" name="checkframes" tags="" position="2867,553.1666666666667" size="100,100">Dust, layers of it. You try wiping it off, but there’s still more dust. [[TURN BACK-&gt;bedroom]]</tw-passagedata><tw-passagedata pid="47" name="nightstand" tags="" position="2747,553.1666666666667" size="100,100">The face of an old clock, like those in elementary school classrooms. The hands are stuck at 12. 
+[[SET TIME-&gt;settime]] 
+[[TURN BACK-&gt;bedroom]]
+[SET TIME no matter what time you set, it’s a dead end] Time set. 
+</tw-passagedata><tw-passagedata pid="48" name="phone" tags="" position="2987,553.1666666666667" size="100,100">It’s silent. Call someone? 
+[[DIAL-&gt;dial]] 
+[[TURN BACK-&gt;bedroom]]
+[DIAL there should be a mechanic here where you can type in a number, but it’s a dead end nonetheless]. Still no sound, except maybe some faint white noise. There really must be no signal here. 
+
+ </tw-passagedata><tw-passagedata pid="49" name="dial" tags="" position="2987,703.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="settime" tags="" position="2747,703.1666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="51" name="drapes" tags="" position="3107,553.1666666666667" size="100,100">Overlooking the forest. The rain is still lashing through the canopy, and you can hear it pelt against the glass. 
+[[TURN BACK-&gt;bedroom]]</tw-passagedata><tw-passagedata pid="52" name="hanger" tags="" position="3227,553.1666666666667" size="100,100">
+You added the hanger to your bag. 
+[[TURN BACK-&gt;bedroom]]</tw-passagedata><tw-passagedata pid="53" name="unclasp" tags="" position="3610.333333333333,548.1666666666667" size="100,100">A pile of neatly folded, cable-knit sweaters. 
+[[CHECK SWEATERS-&gt;sweaters]] 
+[[TURN BACK-&gt;bedroom]]
+</tw-passagedata><tw-passagedata pid="54" name="sweaters" tags="" position="3578.6666666666665,696.5000000000001" size="100,100">They’re soft. When unfolding one, a slip of paper flutters out. 
+[[READ-&gt;readslip]] 
+[[TURN BACK-&gt;bedroom]]
+</tw-passagedata><tw-passagedata pid="55" name="readslip" tags="" position="3578.6666666666665,846.5000000000001" size="100,100">A single phone number. Call me! (386) 121-1111. 
+
+You added the phone number to your bag.
+[[TURN BACK-&gt;bedroom]]</tw-passagedata><tw-passagedata pid="56" name="mirror" tags="" position="3908.6666666666665,543.1666666666667" size="100,100">You feel something plastic behind the mirror, but it’s stuck. 
+[[POKE WITH PERCH-&gt;pokeperch]] 
+[[POKE WITH HANGER-&gt;pokehanger]] 
+[[POKE WITH FIREPLACE SKEWER-&gt;pokeskewer]]
+if you have any of these items of course] 
+[[TURN BACK-&gt;bedroom]]
+
+</tw-passagedata><tw-passagedata pid="57" name="pokeperch" tags="" position="3998.6666666666665,703.1666666666666" size="100,100">It’s too wide. You’ll shatter the mirror if you keep doing that. 
+[[TURN BACK-&gt;mirror]]
+</tw-passagedata><tw-passagedata pid="58" name="pokehanger" tags="" position="3717,699.8333333333334" size="100,100">It’s too skinny. Nothing moves. 
+[[TURN BACK-&gt;mirror]] 
+</tw-passagedata><tw-passagedata pid="59" name="pokeskewer" tags="" position="3867,699.8333333333334" size="100,100"> You wedge the skewer in the small space between the mirror and the wall, and it slides open like the cover of a book. &lt;br&gt; An old retainer case falls out, and when you open it further, you see that it’s a small medicine shelf.  The shelf is empty except for an old pill-box. 
+[[CHECK PILL BOX-&gt;pillbox]] 
+[[TURN BACK-&gt;mirror]]
+</tw-passagedata><tw-passagedata pid="60" name="pillbox" tags="" position="3867,849.8333333333334" size="100,100">Labeled with letters for each day of the week. Inside you can see some small yellow and green pills, and a sticky note reading, “Take once a day at 6:22 PM.” 
+You added the pill box to your bag. 
+[[TURN BACK-&gt;bedroom]]</tw-passagedata><tw-passagedata pid="61" name="top" tags="" position="4218.666666666667,548.1666666666667" size="100,100">So many socks, and some unravelling balls of yarn. 
+[[TURN BACK-&gt;bedroom]]
+</tw-passagedata><tw-passagedata pid="62" name="middle" tags="" position="4402,543.1666666666667" size="100,100">A leather-bound notebook. A fountain-pen set. Empty bottles of ink. An old safe. 
+[[CHECK NOTEBOOK-&gt;notebook]] 
+[[CHECK SAFE-&gt;safe]]
+[[TURN BACK-&gt;bedroom]]
+
+</tw-passagedata><tw-passagedata pid="63" name="bottom" tags="" position="4090.3333333333335,546.5000000000001" size="100,100">Some dry fruits. You need to use your brain!
+[[TURN BACK-&gt;bedroom]]</tw-passagedata><tw-passagedata pid="64" name="notebook" tags="" position="4327,693.1666666666667" size="100,100">Blank, except for a heart drawn on the inside cover. 
+[[TURN BACK-&gt;middle]]
+</tw-passagedata><tw-passagedata pid="65" name="safe" tags="" position="4477,693.1666666666667" size="100,100">Secured shut with a combination lock. Want to open it? 
+[[UNLOCK-&gt;unlocksafe]] 
+[[TURN BACK-&gt;middle]]
+</tw-passagedata><tw-passagedata pid="66" name="unlocksafe" tags="" position="4477,843.1666666666667" size="100,100">(set: $answer to (prompt: &quot;You can type in a combo&quot;, &quot;&quot;)) 
+
+
+(if: $answer is &quot;16-38-21&quot;)
+[The door pops open a crack to reveal a teal letterbox, tied with a bow. [[UNTIE-&gt;untie]] ]
+(else:)
+[Still locked, of course. ]
+[[TURN BACK-&gt;middle]]
+
+</tw-passagedata><tw-passagedata pid="67" name="untie" tags="" position="4477,993.1666666666667" size="100,100">A set of blank floral stationery, and one letter in drawling cursive. 
+[[READ LETTER-&gt;readletter]]
+[[TURN BACK-&gt;middle]]
+</tw-passagedata><tw-passagedata pid="68" name="readletter" tags="" position="4477,1143.1666666666667" size="100,100">Querida mamá, 
+I hope this letter reaches you well. After all, you live in the middle of nowhere, and I don’t even know how the mail deliverer manages to find their way all the way out in that jungle. Of course, thank you for your concern with my studies and my house. Florida is as nice as you remember it. I’m learning how to work the radio station at 90.5, maybe if you tune in you could hear it, but I doubt since you are so far away. &lt;br&gt;
+
+We are reading a lot of books, my favorite of which, Sula, I’ve just sent you. Dazzling writing. Also, along with the $50 enclosed, I’ve sent some other books I think you’d appreciate—Frankenstein, of course. That was your favorite when you were in school, no? Well, I know you lost your copy, but my professor gave me a spare and I thought you’d like it. Furthermore, I’ve sent you a bird-watching dictionary of sorts, since I remember you mentioned the bird feeder in your garden, but you weren’t sure if you were feeding all the different species right. Hopefully this helps. I will visit you soon after this semester ends, I promise. &lt;br&gt;
+											Con amor,
+												H.
+												
+You added the letter to your bag.
+[[TURN BACK-&gt;bedroom]]
+</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
