@@ -64,6 +64,7 @@ Images, audios, are embedded in the game.
 Most if not all Bugs are removed.
 Spell Check
 Apply styles
+inventory, instructions page.
 
 
 ## The rest
