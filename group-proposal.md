@@ -51,18 +51,20 @@ _You may not be able to pin down dates until you get into the mix and see what's
 Completed text-only game. Some bugs and broken links are okay. Will fix in class
 
 **by Thursday, 2019-11-21**
-Images(animated gifs or pngs or jpegs) are ready
-Audio sound effects are ready
-Background sound are ready
+Natasha: Break into sections
+Fatema: Find sound effects, find a solution for variables
+Rachel: Find a few more sounds
+
 
 **by Sunday, 2019-11-21**
+Images(animated gifs or pngs or jpegs) are ready
+Audio sound effects are ready
+Background sounds are ready
 Images, audios, are embedded in the game. 
 Most if not all Bugs are removed.
 Spell Check
 Apply styles
-
-
-
+inventory, instructions page.
 
 
 ## The rest
