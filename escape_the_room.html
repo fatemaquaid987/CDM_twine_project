@@ -11,24 +11,23 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="escape the room" startnode="1" creator="Twine" creator-version="2.3.3" ifid="F460991D-D7F0-4C16-82EE-A6004484B685" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="escape the room" startnode="1" creator="Twine" creator-version="2.3.3" ifid="F460991D-D7F0-4C16-82EE-A6004484B685" zoom="0.6" format="Harlowe" format-version="3.0.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
-</script><tw-passagedata pid="1" name="Home" tags="" position="1311,18" size="100,100">&lt;h1&gt; Escape the terror! &lt;/h1&gt;
+
+
+
+</script><tw-passagedata pid="1" name="Home" tags="" position="921,53" size="100,100">&lt;h1&gt; Escape the terror! &lt;/h1&gt;
 [[start]]
 </tw-passagedata><tw-passagedata pid="2" name="me" tags="" position="619,34" size="100,100">&lt;h1&gt;good job! now click again&lt;/h1&gt; (click-append: &quot;again&quot;) [&lt;br&gt;&lt;em&gt;sweet!&lt;/em&gt;(click-append: &quot;sweet!&quot;)[&lt;br&gt;you win!]]
 
-</tw-passagedata><tw-passagedata pid="3" name="here!" tags="" position="515,33" size="100,100">haha you fell for it</tw-passagedata><tw-passagedata pid="4" name="Begin" tags="" position="1331,391.33333333333337" size="100,100">(put: &quot;not_taken&quot; into $hanger)
+</tw-passagedata><tw-passagedata pid="3" name="here!" tags="" position="515,33" size="100,100">haha you fell for it</tw-passagedata><tw-passagedata pid="4" name="Begin" tags="" position="1569,49" size="100,100">(put: &quot;not_taken&quot; into $hanger)
 
-You step in and immediately regret it, even though this place is snug with the flicker of the fireplace and the glow of the lamps. You tug at the door from the inside at least ten times, but by the eleventh, you know it’s latched tight behind you. 
+You step in and immediately regret it, even though this place is snug with the flicker of the fireplace and the glow of the lamps. You tug at the door from the inside at least ten times, but by the eleventh, you know it’s latched tight [[behind you]]. 
 
-No one’s home, but they might as well be. The place is clearly lived-in, with quilts strewn across the couch, half-peeled oranges atop the table, and vases holding houseplants that have yet to wilt. This is a stranger’s beautiful little cottage, and what trouble would you provoke punching out the glass, knocking over the door?
-
-You decide it’s much smarter to peruse the rooms for a possible key—or a paperclip, strand of metal, something to pick the lock with. Anything. Or anyone. 
-
-Where to start?
-
-Wander around the [[livingroom]] to find your way out, 
-March towards the [[kitchen]] or, take a look around the [[bedroom]] ?</tw-passagedata><tw-passagedata pid="5" name="livingroom" tags="" position="507,255" size="100,100">Square-ish industrial windows [[Try Opening ]] 
+</tw-passagedata><tw-passagedata pid="5" name="livingroom" tags="" position="507,255" size="100,100">Square-ish industrial windows [[Try Opening ]] 
 Front door [[Give it a try]]
 A rustic wood-burning fireplace. Struggling to stay alive now, the fire hiccups. &lt;br&gt;Some of the logs below it, are a bit crooked, and it might sputter out. You don’t have a skewer or tongs to adjust it, though... [[CHECK FIREPLACE-&gt;fireplace]]
 An intricate antique lamp. [[Turn it on]]
@@ -55,26 +54,26 @@ A potted snake plant. [[CHECK POT-&gt;pot]]
 
 
 
-[[GO BACK-&gt;Begin]]</tw-passagedata><tw-passagedata pid="6" name="kitchen" tags="" position="1776,326" size="100,100">
-A collection of patterned mugs strewn across the countertop, teabags dangling over the lip. [[CHECK MUGS-&gt;mugs]]
+[[GO BACK-&gt;easier]]</tw-passagedata><tw-passagedata pid="6" name="kitchen" tags="" position="1704,306" size="100,100">
+ [[CHECK MUGS-&gt;mugs]]
 
-An oval dining table, carved with precision out of cherry wood. There’s a clean, thin line splitting it down the middle. [[CHECK FOR SECRET COMPARTMENTS-&gt;compartments]]
+dining table [[CHECK FOR SECRET COMPARTMENTS-&gt;compartments]]
 
-Uncomfortable looking things that look like they would belong on a patio. Just like the table that they’re crammed around, carved with precision out of cherry wood. Maybe you could move them aside to get a look under the table? [[MOVE CHAIRS-&gt;chairs]]
+[[MOVE CHAIRS-&gt;chairs]]
 
-Wooden cabinets with brass knobs. Look inside? [[LOOK-&gt;cabinets]]  
+cabinets [[LOOK-&gt;cabinets]]  
 
-Sink cabinet with a few wooden serving trays, Pine-Sol cleaning solution, plus some basic appliances. Toaster and slow cooker shoved behind a considerable army of blenders. [[CHECK BLENDERS-&gt;blenders]] 
-
-
-A shiny cotton-candy-pink fridge that must have been restored from the 50s. Look inside? [[LOOK IN FRIDGE-&gt;fridge ]] 
-
-A large square-ish acrylic basin for a sink, with a curved faucet and circular plate for a drain. [[TURN FAUCET ON-&gt;faucet]] 
-
-A creamy-colored oven with obnoxiously large dials. You look inside, but it appears there’s nothing inside except the wire oven racks. &lt;br&gt;lNatural gas stove above it. An old, empty pot sits atop one of the burners. [[OPEN OVEN-&gt;openoven]] [[TURN ON STOVE-&gt;stove]] [[TURN ON OVEN-&gt;startoven]]
+[[CHECK BLENDERS-&gt;blenders]] 
 
 
-[[GO BACK-&gt;Begin]]
+[[LOOK IN FRIDGE-&gt;fridge ]] 
+
+ [[TURN FAUCET ON-&gt;faucet]] 
+
+[[look at cookware-&gt;oven]]
+
+
+[[GO BACK-&gt;easier]]
 
 (if: $hanger is &quot;taken&quot;)[Use hanger to pull something down the drain(click-append: &quot;drain&quot;)[You found a key!]]
 </tw-passagedata><tw-passagedata pid="7" name="bedroom" tags="" position="2867,403" size="100,100">A queen-sized bed on a mahogany frame. &lt;br&gt; Atop the bed lies an antique quilt patterned with red tulips tucked neatly into the mattress, and a plumply-fluffed pillow. [[UNMAKE THE BED-&gt;bed]] [[MOVE THE PILLOW-&gt;pillow]]
@@ -196,30 +195,75 @@ The Secret History - Donna Tartt(click-append: &quot;The Secret History - Donna 
 [[TURN BACK-&gt;livingroom]]</tw-passagedata><tw-passagedata pid="22" name="cushions" tags="" position="1170,535" size="100,100">So many crumbs! You put the cushions back before any more escape. 
 [[TURN BACK-&gt;livingroom]]</tw-passagedata><tw-passagedata pid="23" name="coffeetable" tags="" position="1275,536" size="100,100">An empty basket sits at the bottom. 
 [[TURN BACK-&gt;livingroom]]</tw-passagedata><tw-passagedata pid="24" name="rug" tags="" position="1384,536" size="100,100">What will you do with all that lint? 
-[[TURN BACK-&gt;livingroom]]</tw-passagedata><tw-passagedata pid="25" name="mugs" tags="" position="1753,505" size="100,100">They’re just normal mugs, but judging by the smell, you’re not if sure it’s tea that’s inside or wine. 
-[[TURN BACK-&gt;kitchen]]</tw-passagedata><tw-passagedata pid="26" name="compartments" tags="" position="1867,504" size="100,100">Unfortunately, none. You just made the table larger, though, so good job. [[TURN BACK-&gt;kitchen]]</tw-passagedata><tw-passagedata pid="27" name="chairs" tags="" position="1978,505" size="100,100">A wine rack that’s mostly empty except for a bottle or two. 
+[[TURN BACK-&gt;livingroom]]</tw-passagedata><tw-passagedata pid="25" name="mugs" tags="" position="1753,505" size="100,100">A collection of patterned mugs strewn across the countertop, teabags dangling over the lip. Could there be something inside?(mouseover-append: &quot;inside?&quot;)[
+
+No, they’re just normal mugs, but judging by the smell, you’re not if sure it’s tea that’s inside or wine. 
+
+
+[[TURN BACK-&gt;kitchen]]]</tw-passagedata><tw-passagedata pid="26" name="compartments" tags="" position="1867,504" size="100,100">An oval dining table, carved with precision out of cherry wood. There’s a clean, thin line splitting it down the middle. It seems like if you tried to force the seam apart... something could happen. (mouseover-append: &quot;happen.&quot;)[
+
+
+Unfortunately, none. You just made the table larger, though, so good job. 
+
+
+[[TURN BACK-&gt;kitchen]]]</tw-passagedata><tw-passagedata pid="27" name="chairs" tags="" position="1978,505" size="100,100">Uncomfortable looking things that look like they would belong on a patio. Just like the table that they’re crammed around, carved with precision out of cherry wood. Maybe you could move them aside to get a look under the table? (mouseover-append: &quot;table?&quot;)[
+
+
+A wine rack that’s mostly empty except for a bottle or two. 
+
 [[TAKE BOTTLES-&gt;bottles]]
-[[TURN BACK-&gt;kitchen]]</tw-passagedata><tw-passagedata pid="28" name="bottles" tags="" position="1995,651" size="100,100">There’s a sticky note taped to one of the bottles, reading, “TO-DO: Cook for neighbors. Clean oven. Move wine rack to cellar.” [[TURN BACK-&gt;chairs]]</tw-passagedata><tw-passagedata pid="29" name="cabinets" tags="" position="1642,503" size="100,100">Ceramic jars holding a collection of teabags. &lt;br&gt; Lots and lots of canned food—black beans, coconut milk, applesauce. Bags of walnuts. &lt;br&gt; Empty bowls stacked inside each other. &lt;br&gt;A small pile of cookbooks. Leaf through the cookbooks? 
+
+[[TURN BACK-&gt;kitchen]]]</tw-passagedata><tw-passagedata pid="28" name="bottles" tags="" position="1995,651" size="100,100">There’s a sticky note taped to one of the bottles, reading, “TO-DO: Cook for neighbors. Clean oven. Move wine rack to cellar.” 
+
+[[TURN BACK-&gt;chairs]]</tw-passagedata><tw-passagedata pid="29" name="cabinets" tags="" position="1642,503" size="100,100">Wooden cabinets with brass knobs. Look inside? (mouseover-append: &quot;inside?&quot;)[
+
+Ceramic jars holding a collection of teabags. &lt;br&gt; Lots and lots of canned food—black beans, coconut milk, applesauce. Bags of walnuts. &lt;br&gt; Empty bowls stacked inside each other. &lt;br&gt;A small pile of cookbooks. Leaf through the cookbooks? 
+
+
 [[LEAF THROUGH-&gt;cookbooks]]
-[[TURN BACK-&gt;kitchen]]
+
+[[TURN BACK-&gt;kitchen]]]
 </tw-passagedata><tw-passagedata pid="30" name="cookbooks" tags="" position="1644,648" size="100,100">The pages are super yellowed, and the text was probably generated with a typewriter. Mostly dessert recipes, but you notice a few sections in which some pages were ripped out. 
-[[TURN BACK-&gt;cabinets]]</tw-passagedata><tw-passagedata pid="31" name="blenders" tags="" position="1528,499" size="100,100">On the bottom of one of the smaller blenders is a recipe for “Magical Plum and Honey Smoothies.” You’re intrigued—what does it mean by “magical?” [[MAKE RECIPE-&gt;makerecipe]] 
-[[TURN BACK-&gt;kitchen]]
+
+[[TURN BACK-&gt;cabinets]]</tw-passagedata><tw-passagedata pid="31" name="blenders" tags="" position="1528,499" size="100,100">Sink cabinet with a few wooden serving trays, Pine-Sol cleaning solution, plus some basic appliances. Toaster and slow cooker shoved behind a considerable army of blenders. It doesn&#39;t hurt to check them. (mouseover-append: &quot;them.&quot;)[
+
+
+On the bottom of one of the smaller blenders is a recipe for “Magical Plum and Honey Smoothies.” You’re intrigued—what does it mean by “magical?”
+
+[[MAKE RECIPE-&gt;makerecipe]] 
+
+[[TURN BACK-&gt;kitchen]]]
 </tw-passagedata><tw-passagedata pid="32" name="makerecipe" tags="" position="1527,649" size="100,100">You gather some plums, honey, yogurt, and water from locations around the kitchen and whir them together in the blender. Afterwards, you pour the concoction in a mug and take a sip. Delicious, but you’re not sure if this is the magic recipe you need to get out of this house. 
-[[TURN BACK-&gt;blenders]]</tw-passagedata><tw-passagedata pid="33" name="fridge " tags="" position="2094,505" size="100,100">Some ice cube trays. Vats of Greek yogurt. A jar of honey. Piles of tortillas wrapped in plastic. &lt;br&gt;Perfectly circular chip cookies, wrapped inside a Tupperware bowl. Maybe the baker used a cookie cutter? Cookies should not be that perfect. Take a closer look? 
+
+[[TURN BACK-&gt;blenders]]</tw-passagedata><tw-passagedata pid="33" name="fridge " tags="" position="2094,505" size="100,100">A shiny cotton-candy-pink fridge that must have been restored from the 50s. Look inside?(mouseover-append: &quot;inside?&quot;)[
+
+Some ice cube trays. Vats of Greek yogurt. A jar of honey. Piles of tortillas wrapped in plastic. &lt;br&gt;Perfectly circular chip cookies, wrapped inside a Tupperware bowl. Maybe the baker used a cookie cutter? Cookies should not be that perfect. Take a closer look? 
+
 [[LOOK AT COOKIES-&gt;cookies]] 
-[[TURN BACK-&gt;kitchen]]
+
+[[TURN BACK-&gt;kitchen]]]
 </tw-passagedata><tw-passagedata pid="34" name="cookies" tags="" position="2114,655" size="100,100">You pop open the lid, freeing the warm smell of walnuts from the plastic. You eat one—it’s still fresh, perfectly chewy—and you immediately eat another. &lt;br&gt; What could be the recipe be for these things? You ought to make some for yourself. 
-[[TURN BACK-&gt;fridge ]]</tw-passagedata><tw-passagedata pid="35" name="faucet" tags="" position="2213,506" size="100,100">A steady torrent of water. You think you can hear a clanking sound below the drain, so you turn the faucet off just in case something is broken. [[REMOVE DRAIN COVER-&gt;draincover]] 
-[[TURN BACK-&gt;kitchen]]
+[[TURN BACK-&gt;fridge ]]</tw-passagedata><tw-passagedata pid="35" name="faucet" tags="" position="2213,506" size="100,100">A large square-ish acrylic basin for a sink, with a curved faucet and circular plate for a drain. 
+
+Turn on faucet? (click-append: &quot;Turn on faucet?&quot;)[
+
+A steady torrent of water. You think you can hear a clanking sound below the drain, so you turn the faucet off just in case something is broken. 
+
+[[REMOVE DRAIN COVER-&gt;draincover]] 
+
+[[TURN BACK-&gt;kitchen]]]
 
 </tw-passagedata><tw-passagedata pid="36" name="draincover" tags="" position="2243,647" size="100,100">You can barely make out the fuzzy outlines of a small object at the very bottom of the drain. Your hand is too big to reach it, though… 
+
 [[POKE WITH HANGER (if you have it)-&gt;poke]] 
+
 [[TURN BACK-&gt;faucet]]
 </tw-passagedata><tw-passagedata pid="37" name="poke" tags="" position="2253,793" size="100,100">Poking around for a while, you feel that you’ve touched some small, solid object. &lt;br&gt; After some effort, you feel that you’ve hooked the end of the hanger against a chain, and you pull it upwards like you’re a fisher at the creek. &lt;br&gt;A small copper key looped onto a thin keychain, dotted teal with corrosion. 
-You take the key
-[[TURN BACK-&gt;draincover]]</tw-passagedata><tw-passagedata pid="38" name="stove" tags="" position="2457,510" size="100,100">There must not be enough gas, since the burners don’t ignite. 
-[[TURN BACK-&gt;kitchen]]</tw-passagedata><tw-passagedata pid="39" name="startoven" tags="" position="2337,504" size="100,100">
+
+You take the key!
+
+[[TURN BACK-&gt;draincover]]</tw-passagedata><tw-passagedata pid="38" name="stove" tags="" position="2630,390" size="100,100">There must not be enough gas, since the burners don’t ignite. 
+[[TURN BACK-&gt;oven]]</tw-passagedata><tw-passagedata pid="39" name="startoven" tags="" position="2455,486" size="100,100">
 Oven’s on. What temperature will you set it to?
 (set: $answer to (prompt: &quot;You can type in a number&quot;, &quot;0&quot;)) 
 
@@ -228,11 +272,11 @@ Oven’s on. What temperature will you set it to?
 ] 
 (else:)[ Maybe that’s too hot, you should just turn it off before you burn anything. ]
 
-[[TURN BACK-&gt;kitchen]]</tw-passagedata><tw-passagedata pid="40" name="allthewayopen" tags="" position="2370,652" size="100,100">Cautiously, you hold back a bit to avoid the draft of heat as the door opens all the way. &lt;br&gt; It’s a pretty large oven, with wide wire racks inside and for some reason, a big skewer that looks like the kind you’d use at a bonfire to toast marshmallows on.&lt;br&gt; You turn the oven off, since it’s getting hot and you’re not planning on baking anything. 
+[[TURN BACK-&gt;oven]]</tw-passagedata><tw-passagedata pid="40" name="allthewayopen" tags="" position="2370,652" size="100,100">Cautiously, you hold back a bit to avoid the draft of heat as the door opens all the way. &lt;br&gt; It’s a pretty large oven, with wide wire racks inside and for some reason, a big skewer that looks like the kind you’d use at a bonfire to toast marshmallows on.&lt;br&gt; You turn the oven off, since it’s getting hot and you’re not planning on baking anything. 
 [[TAKE SKEWER-&gt;skewer]] 
 [[TURN BACK-&gt;kitchen]]
 </tw-passagedata><tw-passagedata pid="41" name="skewer" tags="" position="2377,791" size="100,100">You wait until the oven’s cooled off, and then add the skewer to your bag. [[TURN BACK-&gt;kitchen]]</tw-passagedata><tw-passagedata pid="42" name="openoven" tags="" position="2576,510" size="100,100">It’s jammed shut for some reason. 
-[[TURN BACK-&gt;kitchen]]</tw-passagedata><tw-passagedata pid="43" name="bed" tags="" position="3344,554" size="100,100">Just bare sheets. So much floral. 
+[[TURN BACK-&gt;oven]]</tw-passagedata><tw-passagedata pid="43" name="bed" tags="" position="3344,554" size="100,100">Just bare sheets. So much floral. 
 [[MOVE THE PILLOW-&gt;pillow]] 
 [[TURN BACK-&gt;bedroom]]
 </tw-passagedata><tw-passagedata pid="44" name="pillow" tags="" position="3471,556" size="100,100">A yellowed sheet of paper underneath, with a ripped edge. 
@@ -322,42 +366,69 @@ We are reading a lot of books, my favorite of which, Sula, I’ve just sent you.
 												
 You added the letter to your bag.
 [[TURN BACK-&gt;bedroom]]
-</tw-passagedata><tw-passagedata pid="69" name="start" tags="" position="1334.3333333333333,209.66666666666669" size="100,100">There is no other way to navigate these woods(mouseover-append: &quot;woods&quot;)[—with its trees thin and dense like a thousand ribcages overturning into the sky, there exists no choice but to stretch out the threads of your languid consciousness.](mouseover-append: &quot;consciousness.&quot;)[ Awake.](mouseover-append:&quot;Awake.&quot;)[ You have a hiker’s soul, a hiker’s body. With the first bootprint you impressed upon the trail, the familiar press of your bag against your shoulder blades, you belong. ](mouseover-append: &quot;belong.&quot;)[ Warmth of your hands against the wind.]
+</tw-passagedata><tw-passagedata pid="69" name="start" tags="" position="1064,47" size="100,100">There is no other way to navigate these woods(mouseover-append: &quot;woods&quot;)[—with its trees thin and dense like a thousand ribcages overturning into the sky, there exists no choice but to stretch out the threads of your languid consciousness.](mouseover-append: &quot;consciousness.&quot;)[ Awake.](mouseover-append:&quot;Awake.&quot;)[ You have a hiker’s soul, a hiker’s body. With the first bootprint you impressed upon the trail, the familiar press of your bag against your shoulder blades, you belong. ](mouseover-append: &quot;belong.&quot;)[ Warmth of your hands against the wind.]
 (mouseover-append: &quot;wind.&quot;)[&lt;br&gt;The goldenrod of autumn straight through your heart.] 
 (mouseover-append:&quot;heart.&quot;)[&lt;br&gt;Take the back road.]
 
-(mouseover-append: &quot;road.&quot;)[&lt;br&gt;Another one. Gradually, the strange humidity. Your hiker’s instincts, which shock you into the rain, the trees sweating over your forehead.
+(mouseover-append: &quot;road.&quot;)[&lt;br&gt;Another one. Gradually, the strange humidity. Your hiker’s instincts, which shock you into the rain, the trees sweating over your forehead.]
 
-A human instinct: shelter, most importantly. The hiss of water above you. Already off-trail, there’s no point in finding your way back. Take the back road. Another one. 
+(mouseover-append: &quot;forehead.&quot;)[A human instinct: shelter, most importantly. The hiss of water above you. Already off-trail, there’s no point in finding your way back. Take the back road. [[Another one.]]]
 
-Now, a clearing. You didn’t have to see the cottage to know it would look like this: the foundation fairytale pebbles sewn together by veins of ivy, bordered by intricate little white wrought-iron fences. It is not hard to imagine the presence of toadstool mushrooms, folded linens, impeccably-dressed bunnies serving pastries in the backyard. 
+</tw-passagedata><tw-passagedata pid="70" name="Untitled Passage" tags="" position="966,430" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="71" name="Another one." tags="" position="1190,50" size="100,100">Now, a clearing. 
 
-Or a cauldron gurgling inside, cupped to fit a liver the same size as yours. 
+You didn’t have to see the cottage to know it would look like this: fairytale pebbles sewn together by veins of ivy, bordered by intricate little white wrought-iron fences. It is not hard to imagine the presence of toadstool mushrooms, folded linens, impeccably-dressed bunnies serving pastries in the backyard. 
 
+(mouseover-append: &quot;backyard.&quot;)[ 
+Or a cauldron gurgling inside, cupped to fit a liver the same size as yours.] 
+
+(mouseover-append: &quot;yours.&quot;)[ 
 Hiker’s instincts: You are the dumbest person alive. 
-Human instincts: It’s too cold and damp to not take the chance. 
-
+Human instincts: It’s too cold and damp to not take the [[chance.]]] 
+</tw-passagedata><tw-passagedata pid="72" name="chance." tags="" position="1320,53" size="100,100">
 You walk to the wood-plank door. In lieu of a doorknob, an intricately-carved metal door loop, beaded with pearls of water. 
+
 (Knock) (knock) (knock)
 
-“Hello?”
+(mouseover-append: &quot;(Knock) (knock) (knock)&quot;)[
+“Hello?”]
 
-Waiting…..
+(mouseover-append: &quot;Hello?&quot;)[
+Waiting...]
 
-“Hello?”
+(mouseover-append: &quot;Waiting...&quot;)[
+“Hello?”]
 
-Apparently, no one’s home. 
+(mouseover-append: &quot;Hello?&quot;)[
+Apparently, no one’s home.] 
 
+(mouseover-append: &quot;home.&quot;)[
 You glance through the murky industrial windows. No cannibalistic cooking appliances. That you can see. 
 Then at the garden. Turnips. 
-Serial murderers can’t possibly grow turnips. 
+Serial murderers can’t possibly grow [[turnips.]]] 
+</tw-passagedata><tw-passagedata pid="73" name="turnips." tags="" position="1445,50" size="100,100">You tug at the door loop, out of which spills a sudden puff of warmth. (mouseover-append: &quot;warmth.&quot;)[No way it actually opened.
 
-You tug at the door loop, out of which spills a sudden puff of warmth. No way it actually opened. Quickly, you swing it back, almost until it closes, peeking through the blade of space between inside and outside. Within the cottage, a fireplace crackles, and you can detect the faint tartness of elderberry jam. There’s ought to be a fairy who lives here, or at least an unusually mystical old lady. Nobody in sight. Maybe she’s invisible. You swing the door back open and step in, the door loop clanging behind you. Time to find out. 
 
-The smell of wet iron on your hand, almost like a too-loose tooth in the mouth. You press your tongue to your molar as if blood has already bloomed through the enamel.
+Quickly, you swing it back, almost until it closes, peeking through the blade of space between inside and outside.] (mouseover-append: &quot;outside.&quot;)[
+
+Within the cottage, a fireplace crackles, and you can detect the faint tartness of elderberry jam. There ought to be a fairy who lives here, or at least an unusually mystical old lady. Nobody in sight. Maybe she’s invisible. You swing the door back open and step in, the door loop clanging behind you. Time to find out.](mouseover-append: &quot;Time to find out.&quot;)[ 
+
+The smell of wet iron on your hand, almost like a too-loose tooth in the mouth. You press your tongue to your molar as if blood has already bloomed through the enamel.](mouseover-append: &quot;enamel.&quot;)[
+
 
 [[Begin]]]
-</tw-passagedata><tw-passagedata pid="70" name="Untitled Passage" tags="" position="966.6666666666667,430.83333333333337" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="74" name="behind you" tags="" position="1691,59" size="100,100">No one’s home, but they might as well be. The place is clearly lived-in, with quilts strewn across the couch, half-peeled oranges atop the table, and vases holding houseplants that have yet to wilt. This is a stranger’s beautiful little cottage, and what trouble would you provoke [[punching out the window-&gt;easier]] or [[breaking the door-&gt;easier]]?
+</tw-passagedata><tw-passagedata pid="75" name="easier" tags="" position="1702,182" size="100,100">You decide it’s much smarter to peruse the rooms for a possible key—or a paperclip, strand of metal, something to pick the lock with. Anything. Or anyone. 
+
+Where to start?(mouseover-append: &quot;Where to start?&quot;)[
+
+Wander around the [[livingroom]] to find your way out, 
+March towards the [[kitchen]] or, take a look around the [[bedroom]] ?]</tw-passagedata><tw-passagedata pid="76" name="oven" tags="" position="2442,315" size="100,100">A creamy-colored oven with obnoxiously large dials. 
+
+You look inside, but it appears there’s nothing inside except the wire oven racks. &lt;br&gt;lNatural gas stove above it. An old, empty pot sits atop one of the burners. 
+
+[[OPEN OVEN-&gt;openoven]] 
+[[TURN ON STOVE-&gt;stove]] 
+[[TURN ON OVEN-&gt;startoven]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
