@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Lakki+Reddy|Shadows+Into+Light&display=swap');
+ 
+body, tw-story
+{
+  font-family: 'Lakki Reddy', cursive;
+  background-color: #2b230b;
+}
+body
+{
+  background-color: #f5fff0;
+}
+tw-passage
+{
+  color: #3c7534;
+  
+}
+
+tw-link
+{
+  color: #96638d;
+  font-style:bold;
+  font-size: 30px;
+}
+
+.visited{
+  color:#857c48;
+}
+.visited:hover{
+  color:#ccc6a5;
+}
+
+tw-link:hover{
+  color:#9c8091;
+}
+
+div{
+  font-family: 'Shadows Into Light', cursive;
+  font-style: italic;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #e0d4bc;
+  border: 3px dashed black;
+  color: #140345;
+}
