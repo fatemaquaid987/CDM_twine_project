@@ -15,8 +15,10 @@ tw-passage
   color: #3c7534;
   
 }
-
-tw-link, .enchantment-link, .enchantment-mouseover
+.enchantment-mouseover{
+  color: #b5d4a1;
+}
+tw-link, .enchantment-link
 {
   font-family: 'Mansalva', cursive;
   color: #96638d;
