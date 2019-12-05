@@ -14,25 +14,24 @@
 	
 ## SOUNDS
 
-**Clip from "Wet Doodles" by Martijn de Boer**
+**Horror Sounds by GowlerMusic**
 		i. Background music
-		ii. Used under CC-BY-NC
-		iii. Edited in Audacity by Rachel (merged with steady rain)
-		iv. find at http://dig.ccmixter.org/files/NiGiD/60127
-**Steady rain by pulswelle**
-		i. Background music / sounds 
 		ii. Used under Creative Commons Attribution license
-		ii. Edited in Audacity by Rachel (merged w / Wet Doodles)
-		iv. Find at https://freesound.org/people/pulswelle/sounds/194204/
+		iii. Edited in Audacity by Fatema Quaid 
+		iv. find at https://freesound.org/people/GowlerMusic/
+**Rain sound and Rainforest by INNORECORDS**
+		i. Background music / sounds 
+		ii. Used under Creative Commons 0 license
+		iii. Find at https://freesound.org/people/INNORECORDS/sounds/457447/
 
 **Fireplace by silencyo**
 i. Background music / sounds (fireplace in the living room)
-		ii. Used under Creative Commons 0 license
+		i. Used under Creative Commons 0 license
 		ii. Find at https://freesound.org/people/silencyo/sounds/81801/
 
 **Keys unlocking door by ftpalad**
 i. Background music / sounds (sound for attempting to unlock all the doors)
-		ii. Used under Creative Commons 0 license
+		i. Used under Creative Commons 0 license
 		ii. Find at https://freesound.org/people/ftpalad/sounds/119918/
 
 **Lamp switch by adeluc4**
